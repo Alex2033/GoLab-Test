@@ -1,0 +1,25 @@
+.button {
+	background-color: @accent;
+	text-transform: uppercase;
+	color: #ffffff;
+	text-align: center;
+	padding: 12px;
+	display: block;
+	width: 100%;
+	border: 0;
+	cursor: pointer;
+	letter-spacing: 2px;
+	transition: background-color .15s ease;
+
+	&:focus {
+		outline: 0;
+	}
+
+	&:hover {
+		background-color: darken(@accent, 8%);
+	}
+
+	&.active {
+		background-color: darken(@accent, 20%);
+	}
+}

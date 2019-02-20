@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	min-width: 320px;
+	font-size: 13px;
+	color: @text;
+	font-family: @main-f;
+	line-height: 1.2;
+	letter-spacing: 2px;
+	-webkit-font-smoothing: antialiased;
+	background: @bg url(/img/bg.jpg) repeat;
+}
+
+header, section {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	margin: 0;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: normal;
+}

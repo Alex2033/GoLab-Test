@@ -1,0 +1,38 @@
+.navigation {
+    max-width: 1090px;
+}
+
+.site-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    > * {
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+}
+
+.site-list__item {
+    text-transform: uppercase;
+    font-size: 13px;
+    position: relative;
+
+    &:hover { 
+        .site-list__link {
+            color: @accent;
+        }
+        .dropdown {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.site-list__link {
+    display: inline-block;
+    color: @text;
+    padding: 5px;
+    transition: color .15s ease;
+}

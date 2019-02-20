@@ -1,0 +1,55 @@
+// begin header 
+header.header
+    .header__container
+        .header__content
+            .header__logo
+                // begin logo 
+                a(href="/").logo
+                    img(src="img/logo/logo.svg", alt="Logotype").logo__img
+                // end logo 
+            .header__nav
+                // begin navigation 
+                nav.navigation
+                    ul.navigation__list.site-list
+                        li.site-list__item
+                            a.site-list__link(href="/") О нас
+                            // begin dropdown 
+                            .dropdown
+                                ul.dropdown__list
+                                    li.dropdown__item
+                                        a.dropdown__link(href="/") О нас
+                                    li.dropdown__item
+                                        a.dropdown__link(href="/") Продукты
+                                    li.dropdown__item
+                                        a.dropdown__link(href="/") История
+                                    li.dropdown__item
+                                        a.dropdown__link(href="/") Технологии
+                            // end dropdown 
+                        li.site-list__item
+                            a.site-list__link(href="/") Продукты
+                        li.site-list__item
+                            a.site-list__link(href="/") История
+                        li.site-list__item
+                            a.site-list__link(href="/") Технологии
+                // end navigation 
+            .header__user
+                // begin user 
+                .user
+                    .user__photo
+                        img(src="img/user/user.jpg", alt="User")
+                    .user__info
+                        .user__name
+                            | Петр
+                            br
+                            | Иванов
+                // end user 
+                // begin basket 
+                .basket
+                    .basket__img
+                        img(src="img/basket/shopping-cart.svg", alt="Basket icon")
+                    .basket__quantity
+                        span Корзина 
+                        span.basket__number 0
+                        
+                // end basket 
+// end header 

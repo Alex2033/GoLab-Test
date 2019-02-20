@@ -1,0 +1,24 @@
+.basket {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+    > * {
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
+
+.basket__img {
+    width: 30px;
+}
+
+.basket__number {
+    &::before {
+        content: '(';
+    }
+    &::after {
+        content: ')';
+    }
+}
