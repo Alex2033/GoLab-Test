@@ -1,0 +1,39 @@
+.sort {
+    margin-bottom: 30px;
+
+    > * {
+        &:not(:last-child) {
+            &::after {
+                content: '|';
+                margin: 0 5px;
+                position: absolute;
+                top: 0;
+                right: -10px;
+            }
+        }
+    }
+}
+
+.sort__item {
+    position: relative;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    
+    span {
+        transition: color .15s ease;
+    }
+
+    &:hover {
+        span {
+            color: lighten(@accent, 10%);
+        }
+    }
+
+    &:focus {
+        outline: 0;
+    }
+
+    
+    
+}
