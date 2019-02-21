@@ -8,8 +8,15 @@ header.header
                     img(src="img/logo/logo.svg", alt="Logotype").logo__img
                 // end logo 
             .header__nav
+                .toggle
+                    button.toggle__btn
+                        span.toggle__sandwich
+                            img(src="img/icons/burger.svg", alt="Burger image")
+                        span.toggle__text Меню
                 // begin navigation 
                 nav.navigation
+                    .navigation__cancel
+                        img(src="img/icons/cancel.svg", alt="Cancel image")
                     ul.navigation__list.site-list
                         li.site-list__item
                             a.site-list__link(href="/") О нас
@@ -34,7 +41,7 @@ header.header
                 // end navigation 
             .header__user
                 // begin user 
-                .user
+                a(href="/").user
                     .user__photo
                         img(src="img/user/user.jpg", alt="User")
                     .user__info
@@ -48,7 +55,7 @@ header.header
                     .basket__img
                         img(src="img/basket/shopping-cart.svg", alt="Basket icon")
                     .basket__quantity
-                        span Корзина 
+                        span.basket__text Корзина 
                         span.basket__number 0
                         
                 // end basket 

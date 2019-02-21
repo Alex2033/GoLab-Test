@@ -31,8 +31,12 @@
               <!-- end logo -->
             </div>
             <div class="header__nav">
+              <div class="toggle">
+                <button class="toggle__btn"><span class="toggle__sandwich"><img src="img/icons/burger.svg" alt="Burger image"></span><span class="toggle__text">Меню</span></button>
+              </div>
               <!-- begin navigation -->
               <nav class="navigation">
+                <div class="navigation__cancel"><img src="img/icons/cancel.svg" alt="Cancel image"></div>
                 <ul class="navigation__list site-list">
                   <li class="site-list__item"><a class="site-list__link" href="/">О нас</a>
                     <!-- begin dropdown -->
@@ -54,17 +58,15 @@
               <!-- end navigation -->
             </div>
             <div class="header__user">
-              <!-- begin user -->
-              <div class="user">
+              <!-- begin user --><a class="user" href="/">
                 <div class="user__photo"><img src="img/user/user.jpg" alt="User"></div>
                 <div class="user__info">
                   <div class="user__name">Петр<br>Иванов</div>
-                </div>
-              </div>
+                </div></a>
               <!-- end user -->
               <!-- begin basket --><a class="basket" href="/">
                 <div class="basket__img"><img src="img/basket/shopping-cart.svg" alt="Basket icon"></div>
-                <div class="basket__quantity"><span>Корзина </span><span class="basket__number">0</span></div></a>
+                <div class="basket__quantity"><span class="basket__text">Корзина </span><span class="basket__number">0</span></div></a>
               <!-- end basket -->
             </div>
           </div>

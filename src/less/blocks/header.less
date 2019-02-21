@@ -1,6 +1,7 @@
 .header {
     padding: 8px 0;
     background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
 }
 
 .header__container {
@@ -11,16 +12,28 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+}
+
+.header__nav {
+    .xxs-block({
+        order: 1;
+    });
 }
 
 .header__user {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     > * {
         &:not(:last-child) {
             margin-right: 20px;
         }
     }
+
+    .xxs-block({
+        > * {
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+    });
 }

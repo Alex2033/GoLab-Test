@@ -2,7 +2,27 @@
 	position: relative;
     margin: 0 auto;
     padding: 0 15px;
-    max-width: 1390px;
+
+    // .from(@break_xxs, {
+    //     max-width: 540px;
+    // });
+
+    // .from(@break_xs, {
+    //     max-width: 720px;
+    // });
+
+    // .from(@break_sm, {
+    //     max-width: 960px;
+    // });
+
+    // .from(@break_md, {
+    //     max-width: 1170px;
+    // });
+
+    .from(@break_lg, {
+        max-width: 1390px;
+    });
+    
 }
 .lg(@name, @value){
     @media screen and (max-width: @break_lg){

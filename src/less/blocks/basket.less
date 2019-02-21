@@ -12,6 +12,11 @@
             margin-right: 10px;
         }
     }
+
+    .xs-block({
+        width: 80px;
+        flex: 0 0 80px;
+    });
 }
 
 .basket__img {
@@ -25,4 +30,10 @@
     &::after {
         content: ')';
     }
+}
+
+.basket__text {
+    .xs-block({
+        display: none;
+    });
 }

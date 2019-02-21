@@ -1,7 +1,6 @@
 .user {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .user__photo {
@@ -17,8 +16,21 @@
         width: 100%;
         object-fit: cover;
     }
+
+    .md-block({
+        margin-right: 10px;
+    });
+
+    .xs-block({
+        margin-right: 0;
+    });
 }
 
 .user__name {
     text-transform: uppercase;
+    color: @text;
+
+    .xs-block({
+        display: none;
+    });
 }

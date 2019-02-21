@@ -35,3 +35,15 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function() {
+    $('.toggle__btn').click(function() {
+        $('.toggle').toggleClass('active');
+        $('.navigation').toggleClass('active');
+    });
+
+    $('.navigation__cancel').click(function() {
+        $('.toggle').toggleClass('active');
+        $('.navigation').toggleClass('active');
+    });
+});

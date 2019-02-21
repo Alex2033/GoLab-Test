@@ -1,0 +1,49 @@
+.toggle {
+    position: relative;
+    .from(@break_sm, {
+        display: none;
+    });
+}
+
+.toggle__btn {
+    display: flex;
+    width: 120px;
+    align-items: center;
+    border: 0;
+    background-color: @accent;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color .1s ease;
+
+    &:active {
+        background-color: darken(@accent, 5%);
+    }
+
+    .xxs-block({
+        width: initial;
+    });
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.toggle__sandwich {
+    display: block;
+    width: 20px;
+    flex: 0 0 20px;
+    margin-right: 15px;
+
+    .xxs-block({
+        margin-right: 0;
+    });
+}
+
+.toggle__text {
+    color: #ffffff;
+    letter-spacing: 1px;
+
+    .xxs-block({
+        display: none;
+    });
+}

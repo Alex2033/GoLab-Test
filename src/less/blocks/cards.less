@@ -8,26 +8,25 @@
 
 .cards__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    > * {
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
-    }
+    margin-right: -10px;
+
+    .sm-block({
+        justify-content: space-around;
+    });
 }
 
 .card {
-    width: ~"calc(25% - 30px)";
-    flex: 0 0 ~"calc(25% - 30px)";
+    width: 100%;
+    flex: 0 0 100%;
     background-color: #ffffff;
     padding: 45px 30px 27px 30px;
     display: flex;
+    margin-right: 10px;
     flex-direction: column;
-
-    .button {
-        margin-top: auto;
-    }
+    max-width: 310px;
+    margin-bottom: 30px;
 }
 
 .card__img {
@@ -57,6 +56,7 @@
 }
 
 .card__price {
+    margin-top: auto;
     margin-bottom: 10px;
     color: #000000;
     font-family: @alt-f;
